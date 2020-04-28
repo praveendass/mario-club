@@ -35,7 +35,7 @@ header h1 {
 }
 
 .banner .welcome {
-    background-color: transparent;
+    background-color: rgb(184, 228, 28);
     color: #FFFFFF;
     padding: 30px;
     position: absolute;
@@ -43,8 +43,8 @@ header h1 {
     top: 20%;
 }
 
-.banner h2 {
-    font-size: 74px;
+.banner .welcome h2 {
+    font-size: 55px;
 }
 
 .banner h2 span {
@@ -141,6 +141,9 @@ footer {
     text-align: center;
 }
 
+
+/* psuedo classes */
+
 nav li a:hover {
     text-decoration: underline;
 }
@@ -168,3 +171,97 @@ form input:valid {
     outline: none;
 }
 
+
+/* psuedo elements */
+
+article p::first-line {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+section.join h2::selection, p::selection {
+    background-color: rgb(212, 87, 87);
+    color: #FFFFFF;
+}
+
+/* media query */
+
+@media screen and (max-width: 960px) {
+
+    .banner .welcome h2 {
+        font-size: 40px;
+    }
+
+    
+}
+
+@media screen and (max-width: 800px) {
+
+    .banner img {
+        top: 20px;
+    }
+
+    .banner .welcome {
+        position: relative;
+        text-align: center;
+    }
+
+    .banner .welcome br {
+        display: none;
+    }
+
+    .banner h2 span {
+        font-size: 1em;
+    }
+
+    .images li {
+        display: block;
+        width: 80%;
+        margin: 10px 5% auto;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .banner img {
+        top: 30px;
+    }
+
+    
+    .banner .welcome h2 {
+        font-size: 30px;
+    }
+
+    nav li {
+        display: block;
+        font-size: 20px;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+
+    .banner img{
+        top: 40px;
+    }
+
+    .banner .welcome {
+        padding: 0.5em;
+    }
+
+    nav li {
+        display: block;
+        font-size: 20px;
+        margin: 6px 30% auto;
+        text-align: center;
+    }
+
+    section.join {
+        font-size: .8em;
+    }
+
+    
+}
