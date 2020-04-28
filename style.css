@@ -24,20 +24,23 @@ header h1 {
 }
 
 .banner {
-    position: relative;   
+    position: relative;
+    background-color: #c6f349;
 }
 
 .banner img {
+    position: relative;
+    top: 4px;
     max-width: 100%;
 }
 
 .banner .welcome {
-    background-color: #FE8614;
+    background-color: transparent;
     color: #FFFFFF;
     padding: 30px;
     position: absolute;
     left: 0px;
-    top: 30%;
+    top: 20%;
 }
 
 .banner h2 {
@@ -49,10 +52,11 @@ header h1 {
 }
 
 nav {
-    background-color: #f4f4f4;
+    background-color: #fad0d0;
     padding: 20px;
     position: sticky;
-    top: 104px
+    top: 104px;
+    z-index: 1;
 }
 
 nav ul {
@@ -112,10 +116,10 @@ article p {
 }
 
 section.join {
-    background-color: #f4f4f4;
+    background-color: #fad0d0;
     text-align: center;
     padding: 60px 20px;
-    color: #4b4b4b;
+    color: #9b8989;
 }
 
 .join h2 {
@@ -136,3 +140,31 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+.images li:hover {
+    position: relative;
+    top: -4px;
+    left: -4px;
+    background-color: #464444;
+    box-shadow: 4px 4px #464444;
+}
+
+form input:hover {
+    border: 2px solid rgb(247, 120, 141);
+    outline: none;
+}
+
+form input:focus {
+    border: 2px solid blueviolet;
+    outline: none;
+}
+
+form input:valid {
+    border: 2px solid rgb(15, 173, 15);
+    outline: none;
+}
+
